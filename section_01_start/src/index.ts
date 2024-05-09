@@ -1,5 +1,5 @@
 console.log("Hello TypeScript");
 const a: number = 1;
 
-// 1. tsc src/index.ts 로 컴파일하여 index.js 생성
-// 3. tsx 설치하면 tsx src/index.ts 로 실행 바로 가능(컴파일과 node 실행 한번에 해준다.)
+// include 옵션을 설정하면 지정한 범위 내의 ts 파일을 한 번에 컴파일 해준다.
+// 컴파일 할 때에는 터미널에 tsc 를 입력한다.
