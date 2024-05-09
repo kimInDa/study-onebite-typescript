@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "skipLibCheck": true,
-    "module": "CommonJS"
+    "module": "ESNext"
   },
   "include": ["src"]
 }
