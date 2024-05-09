@@ -2,7 +2,8 @@
   "compilerOptions": {
     "target": "ESNext",
     "skipLibCheck": true,
-    "module": "ESNext"
+    "module": "ESNext",
+    "outDir": "dist"
   },
   "include": ["src"]
 }
