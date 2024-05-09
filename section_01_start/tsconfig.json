@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ES5"
+    "target": "ESNext",
+    "skipLibCheck": true
   },
   "include": ["src"]
 }
