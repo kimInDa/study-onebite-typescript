@@ -1,4 +1,9 @@
-import { hello } from "./hello";
-hello();
-// outDir 옵션
-// -> 컴파일 결과 파일이 생성되는 위치를 지정한다.
+const a = 1;
+export {};
+// ModuleDetection 옵션
+// -> TypeScript는 기본적으로 모든 파일을 전역 모듈(파일)로 취급한다.
+// -> 따라서 서로 다른 파일이라도 같은 변수명으로 선언하면 오류가 발생한다.
+// 해결 방법 (2)
+// -> moduleDetection 옵션 적용하기
+// -> "force"로 적용한다.
+// -> 컴파일 된 결과 파일을 살펴보면 각 파일에 export {} 키워드가 자동으로 들어가 있는 것을 볼 수 있다.
