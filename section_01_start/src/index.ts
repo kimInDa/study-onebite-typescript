@@ -1,5 +1,5 @@
-console.log("Hello TypeScript");
-const a: number = 1;
+const func = () => console.log("Hello");
 
-// include 옵션을 설정하면 지정한 범위 내의 ts 파일을 한 번에 컴파일 해준다.
-// 컴파일 할 때에는 터미널에 tsc 를 입력한다.
+// target 옵션
+// -> 컴파일 결과 생성되는 자바스크립트 코드의 버전을 설정한다.
+// -> 따라서 ES5로 설정 시 화살표 함수는 함수 표현식으로 변환된다.
