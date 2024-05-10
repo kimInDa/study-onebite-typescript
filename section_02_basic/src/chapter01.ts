@@ -33,3 +33,8 @@ let null1: null = null;
 let undefined1: undefined = undefined;
 
 // boolean, null, undefined 역시 지정한 타입의 값 외에는 할당할 수 없다.
+
+// # null 값을 다른 타입의 변수에 할당하기
+// -> 자바스크립트에서는 아직 값이 정해지지 않은 변수에 null을 임시로 넣어두곤 했지만, 타입스크립트에서는 에러가 발생한다.
+// -> 이럴 때에는 tsconfig에 strictNullChecks 옵션을 false로 설정한다.
+let numA: number = null; // ❌ -> ⭕️
