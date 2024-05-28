@@ -55,3 +55,27 @@ function voidExam() {
   // undefined의 슈퍼타입이다.
   let voidVar: void = undefined;
 }
+
+/**
+ * any 타입
+ * 타입 계층도를 완벽히 무시한다.
+ * 치트키!
+ * 모든 타입의 슈퍼 타입이자 서브 타입이 돨 수 있다.(never는 제외)
+ * 따라서 왠만하면 사용하지 않는 것을 권장
+ */
+function anyExam() {
+  let anyVar: any;
+  let unkownVar: unknown;
+  let undefinedVar: undefined;
+  let neverVar: never;
+
+  // 다운캐스팅 가능
+  anyVar: unkownVar;
+
+  // 업캐스팅 가능
+  undefinedVar = anyVar;
+
+  // never로 다운캐스팅 할 수 없다.
+  // -> never는 정말 순수한 공집합이기 때문에 어떤 타입도 다운캐스팅할 수 없다. any 타입 조차 안됨!
+  // neverVar = anyVar;
+}
