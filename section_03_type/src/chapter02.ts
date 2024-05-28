@@ -42,3 +42,16 @@ function neverExam() {
   // let never2: never = "string";
   // let never3: never = true;
 }
+
+/**
+ * Void 타입
+ */
+function voidExam() {
+  // 아무 것도 반환하지 않는 함수의 타입으로 자주 사용된다.
+  function voidFunc(): void {
+    console.log("hi");
+  }
+
+  // undefined의 슈퍼타입이다.
+  let voidVar: void = undefined;
+}
